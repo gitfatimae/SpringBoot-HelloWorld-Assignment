@@ -13,14 +13,18 @@ public class HelloworldsprinApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(HelloworldsprinApplication.class, args);
+
+
+
 	}
-	@RestController
+	/*@RestController
 	@RequestMapping(path="/")
 	public class hello {
 		@RequestMapping(value="m/{msgrequest}",method= RequestMethod.GET)
 		public String ecrire(@PathVariable(value="") String msgrequest){
+
 			return "Hello world et speciallement "+msgrequest;
-		}
+		}*/
 
 	}
-}
+
