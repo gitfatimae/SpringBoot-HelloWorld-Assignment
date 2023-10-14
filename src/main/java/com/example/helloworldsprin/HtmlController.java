@@ -16,7 +16,15 @@ public class HtmlController   {
         model.addAttribute("msg", message);
         model.addAttribute("m",m);
 
-        return "index"; // Cela renverra le fichier "exemple.html" depuis le répertoire de templates
+        return "index"; // Cela renverra le fichier "index.html" depuis le répertoire de templates
+    }
+    ////test pour styler la fct greet()
+    @GetMapping("/i")
+    public String ex(Model model) {
+        String mm=h.greet();
+        model.addAttribute("m",mm);
+
+        return "i";
     }
 
 }
